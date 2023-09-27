@@ -12,12 +12,8 @@
         <form id="weather-form" method="post">
             <label for="city">City:</label>
             <input type="text" id="city" name="city" placeholder="City's name" required>
-            <button type="submit">Search</button>
+            <button type="submit">Buscar</button>
         </form>
-        <div id="weather-data">
-            <p>Temperature: {{ temperature }}°C</p>
-            <p>Description: {{ description }}</p>
-        </div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>

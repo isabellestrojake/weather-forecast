@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import requests
 
 
@@ -44,3 +44,6 @@ def index():
         
         return render_template('result.html', temperature=temperatura_celsius, description=weather_description)
     return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
